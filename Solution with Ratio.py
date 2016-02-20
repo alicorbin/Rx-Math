@@ -1,0 +1,6 @@
+Ratio =eval(input("What is the ratio of the solution?"))
+RP= (Ratio*100)
+Volume=int(input("What is the current volume?"))
+Percent=float(input("What is the current percent?"))
+Solution=(Volume*Percent)/(RP)
+print (Solution)

@@ -1,0 +1,6 @@
+Volume=int(input("What is the total number of mL given?"))
+Time=int(input("What is the total minutes the dose is given?"))
+Drops=int(input("What is the number of drops per mL?"))
+DropFactor=(Drops*Volume)
+FlowRate= (DropFactor/Time)
+print ("The number of drops per minute is", round (FlowRate,0))
