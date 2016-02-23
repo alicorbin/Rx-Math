@@ -5,6 +5,8 @@ while True:
     print("4. Pillcount")
     print("5. 3 Part Weight Ratio")
     print("6. Flow Rate")
+    print("7. Solution with Ratio")
+    print("8. W/V Solutions")
     choice=input()
     if choice=="1":
         LBS=int(input("What is the patient's weight?" ))
@@ -54,3 +56,16 @@ while True:
         DropFactor=(Drops*Volume)
         FlowRate= (DropFactor/Time)
         print ("The number of drops per minute is", round (FlowRate,0))
+    if choice=="7":
+        Ratio =eval(input("What is the ratio of the solution?"))
+        RP= (Ratio*100)
+        Volume=int(input("What is the current volume?"))
+        Percent=float(input("What is the current percent?"))
+        Solution=(Volume*Percent)/(RP)
+        print (Solution)
+    if choice=="8":
+        Percent=float(input("What is the percent w/v?"))
+        ML= int(input("What is the amount of solution?"))
+        Solution=(Percent*ML)
+        Answer=(Solution/100)
+        print (Answer)
