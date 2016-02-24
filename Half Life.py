@@ -1,0 +1,5 @@
+Constant= float (input("What is the rate of constant of the drug?"))
+Kel=(0.693)
+Min=(Kel/Constant)
+Hr=(Min/60)
+print ("The half life of the drug is", round(Hr, 1),"hrs")
