@@ -7,6 +7,7 @@ while True:
     print("6. Flow Rate")
     print("7. Solution with Ratio")
     print("8. W/V Solutions")
+    print("9. Half Life")
     choice=input()
     if choice=="1":
         LBS=int(input("What is the patient's weight?" ))
@@ -69,3 +70,9 @@ while True:
         Solution=(Percent*ML)
         Answer=(Solution/100)
         print (Answer)
+    if choice=="9":
+        Constant= float (input("What is the rate of constant of the drug?"))
+        Kel=(0.693)
+        Min=(Kel/Constant)
+        Hr=(Min/60)
+        print ("The half life of the drug is", round(Hr, 1),"hrs")
